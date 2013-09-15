@@ -70,3 +70,6 @@ function skipLongSong()
 function sendAnnouncement()
 {
     API.sendChat(announcements[Math.floor(Math.random() * announcements.length)]);
+}
+
+API.sendChat("Nadastorm Radio Bot is on");
