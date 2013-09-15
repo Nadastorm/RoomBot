@@ -10,12 +10,12 @@ var announcementTick = 60 * 5;
 
 // Random announcements to make periodically
 var announcements = [
-    "Welcome to Nadastorm Radio!",
-    "Read our rules in the info tab located in the upper left",
-    "New? Read 'Get Started' in the info tab located in the upper left",
-    "Join us on the Overcast Network Minecraft server! IP: us.oc.tc",
-    "Want to host an event in Nadastorm Radio? Contact the room staff",
-    "Check out Plug.Bot in the info tab for auto-woot and auto-queue!",
+    "/me *Welcome to Nadastorm Radio!*",
+    "/me *Read our rules in the info tab located in the upper left*",
+    "/me *New? Read 'Get Started' in the info tab located in the upper left*",
+    "/me *Join us on the Overcast Network Minecraft server! IP: us.oc.tc*",
+    "/me *Want to host an event in Nadastorm Radio? Contact the room staff*",
+    "/me *Check out Plug.Bot in the info tab for auto-woot and auto-queue!*",
 ];
 
 // Keywords of blocked songs
@@ -47,7 +47,7 @@ function listener(data)
         if (title.indexOf(blockedSongs[i]) != -1 || author.indexOf(blockedArtists[i]) != -1)
         {
             API.moderateForceSkip();
-            API.sendChat("Skipped song \"" + title + "\" because it is blocked.");
+            API.sendChat("/me *Skipped song \"" + title + "\" because it is blocked.*");
             return;
         }
     }
@@ -64,7 +64,7 @@ function listener(data)
 function skipLongSong()
 {
     API.moderateForceSkip();
-    API.sendChat("Skipping song because it has exceeded the song limit (" + (songBoundary / 60) + " minutes.)");
+    API.sendChat("/me *Skipping song because it has exceeded the song limit (" + (songBoundary / 60) + " minutes.)*");
 }
 
 function sendAnnouncement()
@@ -72,4 +72,4 @@ function sendAnnouncement()
     API.sendChat(announcements[Math.floor(Math.random() * announcements.length)]);
 }
 
-API.sendChat("Nadastorm Radio Bot is on");
+API.sendChat("/me *Nadastorm Radio Bot is on*");
