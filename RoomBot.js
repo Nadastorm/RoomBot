@@ -14,8 +14,8 @@ var announcements = [
     "Read our rules in the info tab located in the upper left",
     "New? Read 'Get Started' in the info tab located in the upper left",
     "Join us on the Overcast Network Minecraft server! IP: us.oc.tc",
-    "Want to host an event in Nadastorm Radio? Contact the room staff"
-    "Check out Plug.Bot in the info tab for auto-woot and auto-queue!"
+    "Want to host an event in Nadastorm Radio? Contact the room staff",
+    "Check out Plug.Bot in the info tab for auto-woot and auto-queue!",
 ];
 
 // Keywords of blocked songs
