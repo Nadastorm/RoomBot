@@ -27,12 +27,12 @@ var announcements = [
 var blockedSongs = [
     "Rick Roll",
     "GANGNAM",
+    "The Fox",
     "10 hour"
 ];
 
 var blockedArtists = [
-    "Rick Astley",
-    "Ylvis"
+    "Rick Astley"
 ];
 
 API.on(API.DJ_ADVANCE, listener);
