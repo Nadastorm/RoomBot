@@ -57,9 +57,7 @@ function listener(data)
         }
     }
 
-    var songLenRaw = $("#time-remaining-value").text();
-    var songLenParts = songLenRaw.split(":");
-    var songLen = (parseInt(songLenParts[0].substring(1)) * 60) + parseInt(songLenParts[1]);
+    var songLen = API.getTimeRemaining();
     if (songLen >= songBoundary)
     {
         window.setTimeout(skipLongSong, 1000 * songBoundary);
@@ -69,7 +67,7 @@ function listener(data)
 function skipLongSong()
 {
     API.moderateForceSkip();
-    chatMe("*Skipping song because it has exceeded the song limit (" + (songBoundary / 60) + " minutes.)*");
+    chatMe("*Skipping song because it has exceeded the song limit of " + (songBoundary / 60) " + minutes*");
 }
 
 function sendAnnouncement()
