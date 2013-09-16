@@ -86,4 +86,5 @@ function chatMe(msg)
 	API.sendChat("/me " + msg);
 }
 
-API.chatLog("*Nadastorm Radio Bot is on*", true);
+
+chatMe("*Nadastorm Radio Bot is on*");
