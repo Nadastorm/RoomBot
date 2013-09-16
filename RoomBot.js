@@ -14,12 +14,13 @@ var lastAnnouncement = 0;
 // Random announcements to make periodically
 var announcements = [
     "*Welcome to Nadastorm Radio!*",
-    "*Join is for Movie Mondays, every Monday at 8ET! Vote on movies here http://bit.ly/NRmovie*",
-    "*Read our rules in the info tab located in the upper left*",
-    "*New? Read 'Get Started' in the info tab located in the upper left*",
+    "*Join us for Movie Mondays, every Monday at 8ET! Vote on movies here http://bit.ly/NRmovie*",
+    "*Read the info tab located in the upper left for room rules, startup guide, and other helpful links*",
     "*Join us on the Overcast Network Minecraft server! IP: us.oc.tc*",
-    "*Want to host an event in Nadastorm Radio? Contact the room staff*",
-    "*Check out Plug.Bot in the info tab for auto-woot and auto-queue!*"
+    "*Want to host an event in Nadastorm Radio like a movie night, room takeover, genre night, livestream music, or something else? Contact the room staff*",
+    "*Check out Plug.Bot in the info tab for auto-woot and auto-queue!*",
+    "*New? Read 'Get Started' in the info tab located in the upper left*",
+    "*Be sure to tell your friends to check out Nadastorm Radio!*"
 ];
 
 // Keywords of blocked songs
