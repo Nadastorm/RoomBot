@@ -14,6 +14,7 @@ var lastAnnouncement = 0;
 // Random announcements to make periodically
 var announcements = [
     "*Welcome to Nadastorm Radio!*",
+    "*Join is for Movie Mondays, every Monday at 8ET! Vote on movies here http://bit.ly/NRmovie*",
     "*Read our rules in the info tab located in the upper left*",
     "*New? Read 'Get Started' in the info tab located in the upper left*",
     "*Join us on the Overcast Network Minecraft server! IP: us.oc.tc*",
