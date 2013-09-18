@@ -27,6 +27,7 @@ var blockedSongs = [
     "Rick Roll",
     "GANGNAM",
     "The Fox",
+    "The Fox [Official music video HD]",
     "10 hour"
 ];
 
