@@ -6,7 +6,7 @@
 var songBoundary = 60 * 7;
 
 // Time between announcements
-var announcementTick = 60 * 5;
+var announcementTick = 60 * 7;
 
 // Index of the last announcement
 var lastAnnouncement = 0;
@@ -14,10 +14,9 @@ var lastAnnouncement = 0;
 // Random announcements to make periodically
 var announcements = [
     "*Welcome to Nadastorm Radio!*",
-    "*Join us for Movie Mondays, every Monday at 8ET! Vote on movies here http://bit.ly/NRmovie*",
     "*Read the info tab located in the upper left for room rules, startup guide, and other helpful links*",
     "*Join us on the Overcast Network Minecraft server! IP: us.oc.tc*",
-    "*Want to host an event in Nadastorm Radio like a movie night, room takeover, genre night, livestream music, or something else? Contact the room staff*",
+    "*Want to host an event in Nadastorm Radio like a movie night, genre night, livestream music, or something else? Contact the room staff*",
     "*Check out Plug.Bot in the info tab for auto-woot and auto-queue!*",
     "*New? Read 'Get Started' in the info tab located in the upper left*",
     "*Be sure to tell your friends to check out Nadastorm Radio!*"
@@ -32,7 +31,8 @@ var blockedSongs = [
 ];
 
 var blockedArtists = [
-    "Rick Astley"
+    "Rick Astley",
+    "Miley Cyrus"
 ];
 
 API.on(API.DJ_ADVANCE, listener);
